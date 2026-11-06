@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1139.923 457.6" width="1139.923" height="457.6" style="--bg:#18181B;--fg:#F4F4F5;--line:#71717A;--muted:#A1A1AA;--surface:#27272A;--border:#3F3F46;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="NestJS" data-label="PetTrack – Pet Health Management Backend">
+  <rect x="40" y="215.8" width="1059.923" height="96.9" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="215.8" width="1059.923" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="229.8" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">PetTrack – Pet Health Management Backend</text>
+</g>
+<polyline class="edge" data-from="Client" data-to="Guards" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,76.9 554.03,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Guards" data-to="AuthMod" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,161.8 554.03,210.8 141.8125,210.8 141.8125,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Guards" data-to="PetMod" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,161.8 554.03,210.8 319.2075,210.8 319.2075,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Guards" data-to="DiseaseMod" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,161.8 554.03,210.8 512.534,210.8 512.534,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Guards" data-to="CaseMod" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,161.8 554.03,210.8 731.425,210.8 731.425,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Guards" data-to="TreatMod" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="554.03,161.8 554.03,210.8 966.2475000000001,210.8 966.2475000000001,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="AuthMod" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="141.8125,296.70000000000005 141.8125,331.70000000000005 554.03,331.70000000000005 554.03,366.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="PetMod" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="319.2075,296.70000000000005 319.2075,331.70000000000005 554.03,331.70000000000005 554.03,366.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="DiseaseMod" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="512.534,296.70000000000005 512.534,331.70000000000005 554.03,331.70000000000005 554.03,366.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="CaseMod" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="731.425,296.70000000000005 731.425,331.70000000000005 554.03,331.70000000000005 554.03,366.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="TreatMod" data-to="DB" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="966.2475000000001,296.70000000000005 966.2475000000001,331.70000000000005 554.03,331.70000000000005 554.03,366.70000000000005" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Client" data-label="Client (Postman / Thunder Client)" data-shape="rectangle">
+  <rect x="439.3185" y="40" width="229.42299999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="554.03" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Client (Postman / Thunder Client)</text>
+</g>
+<g class="node" data-id="Guards" data-label="Guards &amp; Pipes (JWT Auth, Roles, ValidationPipe)" data-shape="rectangle">
+  <rect x="389.67150000000004" y="124.9" width="328.71699999999987" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="554.03" y="143.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Guards &amp; Pipes (JWT Auth, Roles, ValidationPipe)</text>
+</g>
+<g class="node" data-id="DB" data-label="MongoDB (Mongoose)" data-shape="cylinder">
+  <rect x="467.47649999999993" y="373.70000000000005" width="173.107" height="36.900000000000006" fill="var(--_node-fill)" stroke="none" />
+  <line x1="467.47649999999993" y1="373.70000000000005" x2="467.47649999999993" y2="410.6" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="640.5835" y1="373.70000000000005" x2="640.5835" y2="410.6" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="554.03" cy="410.6" rx="86.5535" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="554.03" cy="373.70000000000005" rx="86.5535" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="554.03" y="392.15000000000003" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">MongoDB (Mongoose)</text>
+</g>
+<g class="node" data-id="AuthMod" data-label="1. Auth &amp; Users Module" data-shape="rectangle">
+  <rect x="56" y="259.8" width="171.62499999999997" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="141.8125" y="278.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">1. Auth &amp; Users Module</text>
+</g>
+<g class="node" data-id="PetMod" data-label="2. Pets Module" data-shape="rectangle">
+  <rect x="255.625" y="259.8" width="127.16499999999999" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="319.2075" y="278.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">2. Pets Module</text>
+</g>
+<g class="node" data-id="DiseaseMod" data-label="3. Diseases Catalog Module" data-shape="rectangle">
+  <rect x="410.79" y="259.8" width="203.488" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="512.534" y="278.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">3. Diseases Catalog Module</text>
+</g>
+<g class="node" data-id="CaseMod" data-label="4. Health Cases Module" data-shape="rectangle">
+  <rect x="642.278" y="259.8" width="178.29399999999998" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="731.425" y="278.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">4. Health Cases Module</text>
+</g>
+<g class="node" data-id="TreatMod" data-label="5. Treatments &amp; Vaccines Module" data-shape="rectangle">
+  <rect x="848.5720000000001" y="259.8" width="235.35099999999994" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="966.2475000000001" y="278.25" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">5. Treatments &amp; Vaccines Module</text>
+</g>
+</svg>
