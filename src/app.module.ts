@@ -1,9 +1,10 @@
 import { Module } from '@nestjs/common';
 import { createObserveModule } from '@nestjs/observe';
-import { ConfigModule, ConfigService} from '@nestjs/config';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { DiseasesModule } from './modules/diseases/diseases.module';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -22,14 +23,15 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       isGlobal: true,
       envFilePath: '.env',
     }),
-    //CONNECT TO MongoDB asynchronously using MONGO_URI FROM CONFIGSERVICE
+    // CONNECT TO MongoDB asynchronously using MONGO_URI FROM CONFIGSERVICE
     MongooseModule.forRootAsync({
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         uri: configService.get<string>('MONGO_URI'),
       }),
-        }),
+    }),
+    DiseasesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
