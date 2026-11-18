@@ -5,6 +5,8 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { DiseasesModule } from './modules/diseases/diseases.module';
+import { UsersModule } from './modules/users/users.module';
+import { AuthModule } from './modules/auth/auth.module';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -32,8 +34,10 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       }),
     }),
     DiseasesModule,
+    UsersModule, // 👈 Import UsersModule so AuthModule can use UsersService
+    AuthModule, // 👈 Import AuthModule for authentication and authorization
   ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }
