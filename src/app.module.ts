@@ -34,8 +34,8 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       }),
     }),
     DiseasesModule,
-    UsersModule, // 👈 Import UsersModule so AuthModule can use UsersService
-    AuthModule, // 👈 Import AuthModule for authentication and authorization
+    UsersModule, //  Import UsersModule so AuthModule can use UsersService
+    AuthModule, // Import AuthModule for authentication and authorization
   ],
   controllers: [AppController],
   providers: [AppService],
