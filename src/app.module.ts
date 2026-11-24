@@ -7,7 +7,7 @@ import { AppService } from './app.service';
 import { DiseasesModule } from './modules/diseases/diseases.module';
 import { UsersModule } from './modules/users/users.module';
 import { AuthModule } from './modules/auth/auth.module';
-
+import { PetsModule } from './modules/pets/pets.module';
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
 @Module({
@@ -33,9 +33,10 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
         uri: configService.get<string>('MONGO_URI'),
       }),
     }),
-    DiseasesModule,
-    UsersModule, //  Import UsersModule so AuthModule can use UsersService
+    DiseasesModule, // Import DiseasesModule for disease management
+    UsersModule, // Import UsersModule so AuthModule can use UsersService
     AuthModule, // Import AuthModule for authentication and authorization
+    PetsModule, // Import PetsModule for pet management 
   ],
   controllers: [AppController],
   providers: [AppService],
